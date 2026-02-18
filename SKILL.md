@@ -41,7 +41,9 @@ spawn-notify.sh --task "Description" --model "anthropic/claude-opus-4-6" [--labe
 Environment variables or `config.env`:
 - `SPAWN_NOTIFY_CHANNEL` (default: telegram)
 - `SPAWN_NOTIFY_TARGET` (default: 512593507)
-- `SPAWN_NOTIFY_ENABLED` (default: true)
+- `SPAWN_NOTIFY_ENABLED` (default: **false**)
+
+**Note:** Telegram notifications are **disabled by default** to keep spawn workflow fast (< 10s). Enable explicitly via `SPAWN_NOTIFY_ENABLED=true` in `config.env` or use `--notify-channel` flag when needed.
 
 ## Integration with task-router
 
