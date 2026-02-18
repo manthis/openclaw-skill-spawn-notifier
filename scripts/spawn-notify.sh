@@ -7,6 +7,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 LIB_DIR="${SCRIPT_DIR}/../lib"
 
 # Source config
+# shellcheck source=/dev/null
 CONFIG_FILE="${SCRIPT_DIR}/../config.env"
 [[ -f "$CONFIG_FILE" ]] && source "$CONFIG_FILE"
 
