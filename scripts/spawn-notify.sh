@@ -99,12 +99,12 @@ TIMEOUT_FMT=$(format_timeout "$TIMEOUT")
 # Build notification message
 build_message() {
     cat <<EOF
-🚀 Sub-agent lancé
+_🚀 Sub-agent lancé_
 
-📋 Tâche: ${TASK}
-🤖 Modèle: ${MODEL_ALIAS} (${MODEL})
-⏱️ Timeout: ${TIMEOUT_FMT}
-🏷️ Label: ${LABEL}
+_📋 Tâche: ${TASK}_
+_🤖 Modèle: ${MODEL_ALIAS} (${MODEL})_
+_⏱️ Timeout: ${TIMEOUT_FMT}_
+_🏷️ Label: ${LABEL}_
 EOF
 }
 
